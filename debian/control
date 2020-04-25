@@ -1,0 +1,13 @@
+Source: ros-melodic-moveback-recovery
+Section: misc
+Priority: optional
+Maintainer: Sebastian Pütz <spuetz@uos.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-base-local-planner, ros-melodic-catkin, ros-melodic-costmap-2d, ros-melodic-mbf-costmap-core, ros-melodic-mbf-msgs, ros-melodic-pluginlib, ros-melodic-roscpp, ros-melodic-tf2-geometry-msgs, ros-melodic-tf2-ros
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-moveback-recovery
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-base-local-planner, ros-melodic-costmap-2d, ros-melodic-mbf-costmap-core, ros-melodic-mbf-msgs, ros-melodic-pluginlib, ros-melodic-roscpp, ros-melodic-tf2-geometry-msgs, ros-melodic-tf2-ros
+Description: The Move Base Flex (MBF) recovery behavior moves the robot back for specified length.
+ It also checks the costmap for a possible collision behind the robot while moving and stops the robot if necessary.
